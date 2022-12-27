@@ -18,10 +18,28 @@
       <h3><span>Shopping Cart</span></h3>
       <table>
         <thead>
-          
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
         </thead>
         <tbody>
-          
+          <tr id="totalRow">
+            <td colspan="3"></td>
+            <td id="totalBox">Total: $<span id="total"></span></td>
+            <td></td>
+          </tr>
+          <tr id="inputRow">
+            <form id="addItem">
+              <td><input name="item" placeholder="Item"/></td>
+              <td><input name="price" placeholder="Price"/></td>
+              <td><input name="quantity" placeholder="Quantity"/></td>
+              <td colspan="2"><button type="submit">Add</button></td>
+            </form>
+          </tr>
         </tbody>
       </table>
     </div>
